@@ -6,8 +6,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 CORS(app, origins=[
-    "https://YOUR-PROJECT.web.app",
-    "https://YOUR-PROJECT.firebaseapp.com"
+    "https://cs9lcpapp.web.app/",
+    "https://cs9lcpapp.firebaseapp.com/"
 ])
 
 # Load trained model
