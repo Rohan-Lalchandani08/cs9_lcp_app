@@ -1,9 +1,14 @@
 from flask import Flask, request, jsonify
 from pickle import load
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+CORS(app, origins=[
+    "https://YOUR-PROJECT.web.app",
+    "https://YOUR-PROJECT.firebaseapp.com"
+])
 
 # Load trained model
 with open("lung.pkl", "rb") as f:
